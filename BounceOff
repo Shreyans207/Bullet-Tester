@@ -1,0 +1,12 @@
+function bounceOff(subject , object){
+    if (subject.x - object.x < object.width/2 + subject.width/2
+      && object.x -subject.x < object.width/2 + subject.width/2) {
+     subject.velocityX = subject.velocityX * (-1);
+     object.velocityX = object.velocityX * (-1);
+    }
+   if (subject.y - object.y < object.height/2 + subject.height/2
+    && object.y - subject.y < object.height/2 + subject.height/2){
+    subject.velocityY = subject.velocityY * (-1);
+    object.velocityY = object.velocityY * (-1);
+  }
+}
