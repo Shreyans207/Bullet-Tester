@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);  
+  background("black");  
   bullet.velocityX = speed;
   
 if(hascollided(bullet,wall))
